@@ -13,6 +13,7 @@
             class="form-control"
             formControlName="nombre"
             placeholder="Nombre del producto"
+            [class.is-invalid] = "campoEsValido('nombre')"
           />
 
           <span class="form-text text-danger" *ngIf="campoEsValido('nombre')">
@@ -30,6 +31,7 @@
             class="form-control"
             formControlName="precio"
             placeholder="Precio del producto"
+            [class.is-invalid] = "campoEsValido('precio')"
           />
           <span class="form-text text-danger" *ngIf="campoEsValido('precio')">
             El precio debe de ser 0 o mayor
@@ -46,6 +48,7 @@
             class="form-control"
             formControlName="existencias"
             placeholder="Existencias del producto"
+            [class.is-invalid] = "campoEsValido('existencias')"
           />
 
           <span
