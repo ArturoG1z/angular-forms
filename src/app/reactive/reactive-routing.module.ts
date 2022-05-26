@@ -12,14 +12,12 @@ const routes: Routes = [
       { path: 'basicos', component: BasicosComponent },
       { path: 'dinamicos', component: DinamicosComponent },
       { path: 'switches', component: SwitchesComponent },
-      { path: '**', redirectTo: 'basicos' }
-    ]
-  }
+      { path: '**', redirectTo: 'basicos' },
+    ],
+  },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forChild(routes)
-  ]
+  imports: [RouterModule.forChild(routes)],
 })
-export class ReactiveRoutingModule { }
+export class ReactiveRoutingModule {}
