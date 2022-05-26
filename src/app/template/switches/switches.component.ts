@@ -11,6 +11,7 @@ export class SwitchesComponent  {
   persona = {
     genero: 'F',
     notificaciones: true,
+    terminosYCondiciones: false
   }
 
   terminosYCondiciones: boolean = false;
