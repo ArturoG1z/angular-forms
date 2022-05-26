@@ -67,6 +67,7 @@
         type="button"
         class="btn btn-primary float-end"
         (click)="guardar()"
+        [disabled]="miFormulario.invalid"
       >
         Guardar
       </button>
@@ -76,6 +77,10 @@
 
 <span>Valid</span>
 <pre>{{ miFormulario.valid }}</pre>
+<br />
+
+<span>Invalid</span>
+<pre>{{ miFormulario.invalid }}</pre>
 <br />
 
 <span>Value</span>
